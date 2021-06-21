@@ -12,14 +12,14 @@ deps = {
   # TODO(kjellander): Move this to be Android-only once the libevent dependency
   # in base/third_party/libevent is solved.
   'src/base':
-    'https://gitlab.agora.io/webrtc/chromium-src-base.git@d3cd138c7907e909577e7766ddd74ea0dd62edc8',
+    'https://chromium.googlesource.com/chromium/src/base@d3cd138c7907e909577e7766ddd74ea0dd62edc8',
   'src/build':
-    'https://gitlab.agora.io/webrtc/chromium-src-build.git@d3dfde52d05eae7a5466f7d67f925814437b0083',
+    'https://chromium.googlesource.com/chromium/src/build@d3dfde52d05eae7a5466f7d67f925814437b0083',
   'src/buildtools':
-    'https://gitlab.agora.io/webrtc/chromium-src-buildtools.git@cf454b247c611167388742c7a31ef138a6031172',
+    'https://chromium.googlesource.com/chromium/src/buildtools@cf454b247c611167388742c7a31ef138a6031172',
   # Gradle 4.3-rc4. Used for testing Android Studio project generation for WebRTC.
   'src/examples/androidtests/third_party/gradle': {
-    'url': 'https://gitlab.agora.io/webrtc/src-examples-androidtests-third_party-gradle.git@89af43c4d0506f69980f00dde78c97b2f81437f8',
+    'url': 'https://chromium.googlesource.com/external/github.com/gradle/gradle.git@89af43c4d0506f69980f00dde78c97b2f81437f8',
     'condition': 'checkout_android',
   },
   'src/ios': {
@@ -27,9 +27,9 @@ deps = {
     'condition': 'checkout_ios',
   },
   'src/testing':
-    'https://gitlab.agora.io/webrtc/src-testing.git@d149367a8a650454bd259130205b722df7e53846',
+    'https://chromium.googlesource.com/chromium/src/testing@d149367a8a650454bd259130205b722df7e53846',
   'src/third_party':
-    'https://gitlab.agora.io/webrtc/src-third_party.git@943906bccceea25a84c1bf8bc71550bf91dd8d89',
+    'https://chromium.googlesource.com/chromium/src/third_party@943906bccceea25a84c1bf8bc71550bf91dd8d89',
 
   'src/buildtools/linux64': {
     'packages': [
@@ -63,13 +63,13 @@ deps = {
   },
 
   'src/buildtools/clang_format/script':
-    'https://gitlab.agora.io/webrtc/src-buildtools-clang_format-script.git@96636aa0e9f047f17447f2d45a094d0b59ed7917',
+    'https://chromium.googlesource.com/chromium/llvm-project/cfe/tools/clang-format.git@96636aa0e9f047f17447f2d45a094d0b59ed7917',
   'src/buildtools/third_party/libc++/trunk':
-    'https://gitlab.agora.io/webrtc/src-buildtools-third_party-libc-trunk.git@5938e0582bac570a41edb3d6a2217c299adc1bc6',
+    'https://chromium.googlesource.com/chromium/llvm-project/libcxx.git@5938e0582bac570a41edb3d6a2217c299adc1bc6',
   'src/buildtools/third_party/libc++abi/trunk':
-    'https://gitlab.agora.io/webrtc/src-buildtools-third_party-libcpp-abi-trunk.git@0d529660e32d77d9111912d73f2c74fc5fa2a858',
+    'https://chromium.googlesource.com/chromium/llvm-project/libcxxabi.git@0d529660e32d77d9111912d73f2c74fc5fa2a858',
   'src/buildtools/third_party/libunwind/trunk':
-    'https://gitlab.agora.io/webrtc/src-buildtools-third_party-libunwind-trunk.git@69d9b84cca8354117b9fe9705a4430d789ee599b',
+    'https://chromium.googlesource.com/external/llvm.org/libunwind.git@69d9b84cca8354117b9fe9705a4430d789ee599b',
 
   'src/tools/clang/dsymutil': {
     'packages': [
@@ -105,38 +105,38 @@ deps = {
   },
 
   'src/third_party/auto/src': {
-    'url': 'https://gitlab.agora.io/webrtc/src-third_party-auto-src.git@8a81a858ae7b78a1aef71ac3905fade0bbd64e82',
+    'url': 'https://chromium.googlesource.com/external/github.com/google/auto.git@8a81a858ae7b78a1aef71ac3905fade0bbd64e82',
     'condition': 'checkout_android',
   },
   'src/third_party/boringssl/src':
-    'https://gitlab.agora.io/webrtc/src-third_party-boringssl-src.git@bc4c09df6416a3a0d0cf321c6c13023c77e2fec4',
+    'https://boringssl.googlesource.com/boringssl.git@bc4c09df6416a3a0d0cf321c6c13023c77e2fec4',
   'src/third_party/catapult':
-    'https://gitlab.agora.io/webrtc/src-third_party-catapult.git@44806300adbd52cb4193a76c7282a2f6cb7250d0',
+    'https://chromium.googlesource.com/catapult.git@44806300adbd52cb4193a76c7282a2f6cb7250d0',
   'src/third_party/ced/src': {
-    'url': 'https://gitlab.agora.io/webrtc/src-third_party-ced-src.git@ba412eaaacd3186085babcd901679a48863c7dd5',
+    'url': 'https://chromium.googlesource.com/external/github.com/google/compact_enc_det.git@ba412eaaacd3186085babcd901679a48863c7dd5',
     'condition': 'checkout_android',
   },
   'src/third_party/colorama/src':
-    'https://gitlab.agora.io/webrtc/src-third_party-colorama-src.git@799604a1041e9b3bc5d2789ecbd7e8db2e18e6b8',
+    'https://chromium.googlesource.com/external/colorama.git@799604a1041e9b3bc5d2789ecbd7e8db2e18e6b8',
   'src/third_party/depot_tools':
-    'https://gitlab.agora.io/webrtc/src-third_party-depot_tools.git@ba97f6065ed1e9336585468dd85e680cf09d5166',
+    'https://chromium.googlesource.com/chromium/tools/depot_tools.git@ba97f6065ed1e9336585468dd85e680cf09d5166',
   'src/third_party/errorprone/lib': {
-      'url': 'https://gitlab.agora.io/webrtc/src-third_party-errorprone-lib.git@980d49e839aa4984015efed34b0134d4b2c9b6d7',
+      'url': 'https://chromium.googlesource.com/chromium/third_party/errorprone.git@980d49e839aa4984015efed34b0134d4b2c9b6d7',
       'condition': 'checkout_android',
   },
   'src/third_party/ffmpeg':
-    'https://gitlab.agora.io/webrtc/src-third_party-ffmpeg.git@d7ba23c23434eb938c6fcae4fe77ca1e2a2fbeff',
+    'https://chromium.googlesource.com/chromium/third_party/ffmpeg.git@d7ba23c23434eb938c6fcae4fe77ca1e2a2fbeff',
   'src/third_party/findbugs': {
-    'url': 'https://gitlab.agora.io/webrtc/src-third_party-findbugs.git@4275d9ac8610db6b1bc9a5e887f97e41b33fac67',
+    'url': 'https://chromium.googlesource.com/chromium/deps/findbugs.git@4275d9ac8610db6b1bc9a5e887f97e41b33fac67',
     'condition': 'checkout_android',
   },
   'src/third_party/freetype/src':
-    'https://gitlab.agora.io/webrtc/src-third_party-freetype-src.git@90a30f154a612693641e5366ea8d1d27ea2a4a99',
+    'https://chromium.googlesource.com/chromium/src/third_party/freetype2.git@90a30f154a612693641e5366ea8d1d27ea2a4a99',
   'src/third_party/harfbuzz-ng/src':
-    'https://gitlab.agora.io/webrtc/src-third_party-harfbuzz-ng-src.git@c1a585fab0c17fe47b0728cf67920791c2173019',
+    'https://chromium.googlesource.com/external/github.com/harfbuzz/harfbuzz.git@c1a585fab0c17fe47b0728cf67920791c2173019',
   # WebRTC-only dependency (not present in Chromium).
   'src/third_party/gtest-parallel':
-    'https://gitlab.agora.io/webrtc/src-third_party-gtest-parallel.git@df0b4e476f98516cea7d593e5dbb0fca44f6ee7f',
+    'https://chromium.googlesource.com/external/github.com/google/gtest-parallel@df0b4e476f98516cea7d593e5dbb0fca44f6ee7f',
   'src/third_party/google-truth': {
       'packages': [
           {
@@ -148,47 +148,47 @@ deps = {
       'dep_type': 'cipd',
   },
   'src/third_party/googletest/src':
-    'https://gitlab.agora.io/webrtc/src-third_party-googletest-src.git@f2fb48c3b3d79a75a88a99fba6576b25d42ec528',
+    'https://chromium.googlesource.com/external/github.com/google/googletest.git@f2fb48c3b3d79a75a88a99fba6576b25d42ec528',
   'src/third_party/icu': {
-    'url': 'https://gitlab.agora.io/webrtc/src-third_party-icu.git@5005010d694e16571b8dfbf07d70817841f80a69',
+    'url': 'https://chromium.googlesource.com/chromium/deps/icu.git@5005010d694e16571b8dfbf07d70817841f80a69',
   },
   'src/third_party/jsr-305/src': {
-    'url': 'https://gitlab.agora.io/webrtc/src-third_party-jsr-305-src.git@642c508235471f7220af6d5df2d3210e3bfc0919',
+    'url': 'https://chromium.googlesource.com/external/jsr-305.git@642c508235471f7220af6d5df2d3210e3bfc0919',
     'condition': 'checkout_android',
   },
   'src/third_party/jsoncpp/source':
-    'https://gitlab.agora.io/webrtc/src-third_party-jsoncpp-source.git@645250b6690785be60ab6780ce4b58698d884d11', # from svn 248
+    'https://chromium.googlesource.com/external/github.com/open-source-parsers/jsoncpp.git@645250b6690785be60ab6780ce4b58698d884d11', # from svn 248
   'src/third_party/junit/src': {
-    'url': 'https://gitlab.agora.io/webrtc/src-third_party-junit-src.git@64155f8a9babcfcf4263cf4d08253a1556e75481',
+    'url': 'https://chromium.googlesource.com/external/junit.git@64155f8a9babcfcf4263cf4d08253a1556e75481',
     'condition': 'checkout_android',
   },
   # Used for building libFuzzers (only supports Linux).
   'src/third_party/libFuzzer/src':
-    'https://gitlab.agora.io/webrtc/src-third_party-libfuzzer-src.git@b9f51dc8c98065df0c8da13c051046f5bab833db',
+    'https://chromium.googlesource.com/chromium/llvm-project/compiler-rt/lib/fuzzer.git@b9f51dc8c98065df0c8da13c051046f5bab833db',
   'src/third_party/libjpeg_turbo':
-    'https://gitlab.agora.io/webrtc/src-third_party-libjpeg_turbo.git@9d3bf3e9680156c48041c8b90fece504e3539a61',
+    'https://chromium.googlesource.com/chromium/deps/libjpeg_turbo.git@9d3bf3e9680156c48041c8b90fece504e3539a61',
   'src/third_party/libsrtp':
-    'https://gitlab.agora.io/webrtc/src-third_party-libsrtp.git@650611720ecc23e0e6b32b0e3100f8b4df91696c',
+    'https://chromium.googlesource.com/chromium/deps/libsrtp.git@650611720ecc23e0e6b32b0e3100f8b4df91696c',
   'src/third_party/libvpx/source/libvpx':
-    'https://gitlab.agora.io/webrtc/src-third_party-libvpx-source-libvpx.git@412547ad4b759e139b626f523b313c87debc6639',
+    'https://chromium.googlesource.com/webm/libvpx.git@412547ad4b759e139b626f523b313c87debc6639',
   'src/third_party/libyuv':
-    'https://gitlab.agora.io/webrtc/src-third_party-libyuv.git@f9aacffa029ff3a32f0408f78e2588663271f1b1',
+    'https://chromium.googlesource.com/libyuv/libyuv.git@f9aacffa029ff3a32f0408f78e2588663271f1b1',
   'src/third_party/lss': {
-    'url': 'https://gitlab.agora.io/webrtc/src-third_party-lss.git@8048ece6c16c91acfe0d36d1d3cc0890ab6e945c',
+    'url': 'https://chromium.googlesource.com/linux-syscall-support.git@8048ece6c16c91acfe0d36d1d3cc0890ab6e945c',
     'condition': 'checkout_android or checkout_linux',
   },
   'src/third_party/mockito/src': {
-    'url': 'https://gitlab.agora.io/webrtc/src-third_party-mockito-src.git@04a2a289a4222f80ad20717c25144981210d2eac',
+    'url': 'https://chromium.googlesource.com/external/mockito/mockito.git@04a2a289a4222f80ad20717c25144981210d2eac',
     'condition': 'checkout_android',
   },
 
   # Used by boringssl.
   'src/third_party/nasm': {
-      'url': 'https://gitlab.agora.io/webrtc/src-third_party-nasm.git@21eb595319746a669a742d210eaa413c728e7fad'
+      'url': 'https://chromium.googlesource.com/chromium/deps/nasm.git@21eb595319746a669a742d210eaa413c728e7fad'
   },
 
   'src/third_party/openh264/src':
-    'https://gitlab.agora.io/webrtc/src-third_party-openh264-src.git@6f26bce0b1c4e8ce0e13332f7c0083788def5fdf',
+    'https://chromium.googlesource.com/external/github.com/cisco/openh264@6f26bce0b1c4e8ce0e13332f7c0083788def5fdf',
   'src/third_party/r8': {
       'packages': [
           {
@@ -210,30 +210,30 @@ deps = {
       'dep_type': 'cipd',
   },
   'src/third_party/requests/src': {
-    'url': 'https://gitlab.agora.io/webrtc/src-third_party-requests-src.git@f172b30356d821d180fa4ecfa3e71c7274a32de4',
+    'url': 'https://chromium.googlesource.com/external/github.com/kennethreitz/requests.git@f172b30356d821d180fa4ecfa3e71c7274a32de4',
     'condition': 'checkout_android',
   },
   'src/third_party/robolectric/robolectric': {
-    'url': 'https://gitlab.agora.io/webrtc/src-third_party-robolectric-robolectric.git@3d6dcabf5521e028c8efc2778ab6bd8c7b6d923c',
+    'url': 'https://chromium.googlesource.com/external/robolectric.git@3d6dcabf5521e028c8efc2778ab6bd8c7b6d923c',
     'condition': 'checkout_android',
   },
   'src/third_party/ub-uiautomator/lib': {
-    'url': 'https://gitlab.agora.io/webrtc/src-third_party-ub-uiautomator-lib.git@00270549ce3161ae72ceb24712618ea28b4f9434',
+    'url': 'https://chromium.googlesource.com/chromium/third_party/ub-uiautomator.git@00270549ce3161ae72ceb24712618ea28b4f9434',
     'condition': 'checkout_android',
   },
   'src/third_party/usrsctp/usrsctplib':
-    'https://gitlab.agora.io/webrtc/src-third_party-usrsctp-usrsctplib.git@7a8bc9a90ca96634aa56ee712856d97f27d903f8',
+    'https://chromium.googlesource.com/external/github.com/sctplab/usrsctp@7a8bc9a90ca96634aa56ee712856d97f27d903f8',
   # Dependency used by libjpeg-turbo.
   'src/third_party/yasm/binaries': {
-    'url': 'https://gitlab.agora.io/webrtc/src-third_party-yasm-binaries.git@52f9b3f4b0aa06da24ef8b123058bb61ee468881',
+    'url': 'https://chromium.googlesource.com/chromium/deps/yasm/binaries.git@52f9b3f4b0aa06da24ef8b123058bb61ee468881',
     'condition': 'checkout_win',
   },
   'src/third_party/yasm/source/patched-yasm':
-    'https://gitlab.agora.io/webrtc/src-third_party-yasm-source-patched-yasm.git@720b70524a4424b15fc57e82263568c8ba0496ad',
+    'https://chromium.googlesource.com/chromium/deps/yasm/patched-yasm.git@720b70524a4424b15fc57e82263568c8ba0496ad',
   'src/tools':
-    'https://gitlab.agora.io/webrtc/src-tools.git@b83f18766b7f98bcf059515f3eef5b497b5c50b4',
+    'https://chromium.googlesource.com/chromium/src/tools@b83f18766b7f98bcf059515f3eef5b497b5c50b4',
   'src/tools/swarming_client':
-    'https://gitlab.agora.io/webrtc/src-tools-swarming_client.git@885b3febcc170a60f25795304e60927b77d1e92d',
+    'https://chromium.googlesource.com/infra/luci/client-py.git@885b3febcc170a60f25795304e60927b77d1e92d',
 
   'src/third_party/accessibility_test_framework': {
       'packages': [
@@ -357,7 +357,7 @@ deps = {
   },
 
   'src/third_party/android_ndk': {
-      'url': 'https://gitlab.agora.io/webrtc/src-third_party-android_ndk.git@89e8db0cdf323af8bc24de875d7d2a43a66bf10e',
+      'url': 'https://chromium.googlesource.com/android_ndk.git@89e8db0cdf323af8bc24de875d7d2a43a66bf10e',
       'condition': 'checkout_android',
   },
 
