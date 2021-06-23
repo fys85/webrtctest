@@ -143,6 +143,7 @@ void JNI_YuvHelper_I420ToJPEG(JNIEnv* jni, const JavaParamRef<jobject>& srcY,
                                                      jint quality,
                                                      jint width,
                                                      jint height) {
+  /**
     const uint8_t* src_y = static_cast<const uint8_t*>(jni->GetDirectBufferAddress(srcY.obj()));
     const uint8_t* src_u = static_cast<const uint8_t*>(jni->GetDirectBufferAddress(srcU.obj()));
     const uint8_t* src_v = static_cast<const uint8_t*>(jni->GetDirectBufferAddress(srcV.obj()));
@@ -168,6 +169,7 @@ void JNI_YuvHelper_I420ToJPEG(JNIEnv* jni, const JavaParamRef<jobject>& srcY,
     jni->CallVoidMethod(callback.obj(), callback_method, jni->NewDirectByteBuffer(outData, outSize));
     if (outData != NULL)
         free(outData);
+   */
 }
 
 
